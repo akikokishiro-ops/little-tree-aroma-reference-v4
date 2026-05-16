@@ -399,7 +399,7 @@ const AromaDetail: React.FC<AromaDetailProps> = ({ aroma, categories, onEdit, on
       {(normalizedAroma.imagePaths ?? []).length > 0 ? (
         <div className="image-gallery">
           {normalizedAroma.imagePaths.map((path, index) => (
-            <div key={index} className="image-item">
+            <div key={index} className="detail-image-frame">
               <img
                 src={toAssetUrl(path)}
                 alt={`${normalizedAroma.name} - 画像${index + 1}`}
